@@ -220,20 +220,13 @@ SELECT
 	    b.EMP_NAME
      , a.JOB_NAME
      , b.SALARY
-     , b.SALARY*12 AS '연봉'  -- 연봉은 테이블을 따로 만들어서 해야할거같은데 어쩌노
+     , LEAST(b.SALARY, b.SALARY*(1 + COALESCE(b.BONUS, 0)))*12 AS '연봉'  -- 연봉은 테이블을 따로 만들어서 해야할거같은데 어쩌노
   FROM job a
  RIGHT JOIN employee b ON a.JOB_CODE = b.JOB_CODE
   LEFT JOIN sal_grade c ON c.SAL_LEVEL = b.SAL_LEVEL
  WHERE b.SALARY > c.MIN_SAL;
 
 SELECT * FROM sal_grade;
-
--- 연봉테이블 만들기
-SELECT 
-		 d.
-  FROM employee d
-  LEFT JOIN sal_grade e ON e.SAL_LEVEL = d.SAL_LEVEL
- WHERE d.BONUS IS NOT NULL; 
  
 -- 6. 한국(KO)과 일본(JP)에 근무하는 직원들의
 -- 사원명, 부서명, 지역명, 국가명을 조회하시오.(15명)

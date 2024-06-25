@@ -47,7 +47,7 @@ SELECT
      , DEPT_CODE
      , SALARY
   FROM employee
- WHERE DEPT_CODE = 'D6' AND SALARY >= 3000000;
+ WHERE DEPT_CODE = 'D6' AND SALARY > 3000000;
 
 
 -- 8. 보너스를 받지 않는 사원에 대한

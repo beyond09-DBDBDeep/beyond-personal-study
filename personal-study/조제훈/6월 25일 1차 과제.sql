@@ -192,7 +192,7 @@ SELECT
    	 a.EMP_NAME
 	  , b.JOB_NAME
      , a.SALARY
-     , (a.salary * 12 * 1 + COALESCE (a.BONUS,0)) AS 연봉
+     , LEAST((a.salary * 12 * 1 + COALESCE (a.BONUS,0)), c.MAX_SAL) AS 연봉
   FROM EMPLOYEE a
   JOIN JOB b
 	 ON a.JOB_CODE = b.JOB_CODE

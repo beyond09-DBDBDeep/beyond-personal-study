@@ -92,7 +92,7 @@ SELECT
      , DEPT_CODE AS 부서코드
      , JOB_CODE AS 직급코드
   FROM employee
- WHERE SALARY >= 3500000;
+ WHERE SALARY BETWEEN 3500000 AND  5500000;
 
  
 -- 12. employee 테이블에서 '성이 김씨'인 직원의 사번, 이름, 입사일 조회
@@ -138,7 +138,7 @@ SELECT
      , SALARY
      , JOB_CODE
   FROM employee
- WHERE JOB_CODE = 'J2' OR JOB_CODE = 'J7';
+ WHERE JOB_CODE = 'J2' OR JOB_CODE = 'J7' AND SALARY >= 2000000;
 
 -- 17. IN 연산자로 업그레이드
 SELECT
@@ -146,7 +146,7 @@ SELECT
      , SALARY
      , JOB_CODE
   FROM employee
- WHERE JOB_CODE IN ('J2','J7');
+ WHERE JOB_CODE IN ('J2','J7') AND SALARY >= 2000000;
 
 -- ------------------------------------------
 -- <JOIN 사용 연습문제>              
@@ -157,7 +157,7 @@ SELECT
      , employee.EMP_NAME
      , department.DEPT_TITLE
   FROM employee AS employee
-  JOIN department AS department
+  LEFT JOIN department AS department
     ON employee.DEPT_CODE = department.DEPT_ID
  WHERE employee.EMP_NAME LIKE '%형%'; 
 

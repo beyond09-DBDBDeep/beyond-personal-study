@@ -1,4 +1,6 @@
-# beyond-study
+# Beyond-study
+
+한화시스템 Beyond 9기 디비디비딥 개인 스터디
 
 ## SW-CAMP Study
 > 1. GitHub을 일상화하기 위해서 기본적인 세팅 (Issue, milestone, 개인 branch 등) 을 마친다.

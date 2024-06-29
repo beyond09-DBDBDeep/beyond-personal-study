@@ -37,3 +37,8 @@
 [16. [SQL] Trigger (트리거)](https://velog.io/@jojehuni_9759/SQL-Trigger-%ED%8A%B8%EB%A6%AC%EA%B1%B0)
 
 [17. [SQL] BUILD IN FUNCTIONS](https://velog.io/@jojehuni_9759/SQL-BUILD-IN-FUNCTIONS)
+
+
+---
+## DataModeling
+[Data_Modeling](https://velog.io/@jojehuni_9759/DataModeling)

@@ -1,9 +1,9 @@
 ---
 name: Study Authentication request
-about: 스터디 인증 템플
-title: "'' - CheckBox"
+about: 스터디 이슈 템플
+title: "'' - CheckBoxStatus"
 labels: study
-assignees: yapheh, Bang1999, woodart8, JoJeHuni, Haegwan-Choe, jinjin0528
+assignees: Bang1999, Haegwan-Choe, jinjin0528, JoJeHuni, woodart8, yapheh
 
 ---
 
@@ -17,13 +17,9 @@ assignees: '' <- 모두 (알림으로 오겠지만 몰랐던 것, 궁금했던 �
 ---
 
 - CheckBox
-- - [x] 1. 
-- - [ ] 2. 
-
----
-- 몰랐던 것, 궁금한 것을 찾아보고 알게 된 정보
-1. '' 
-
-ex) 1. '1번 체크박스에서 궁금증 : ~
-궁금증을 해결할 때 참고한 링크 : ~
-정리 : ~'
+- - [ ] 방동호
+- - [ ] 이효진
+- - [ ] 전기범
+- - [ ] 조제훈
+- - [ ] 최해관
+- - [ ] 최형석
